@@ -8,7 +8,7 @@ const inputEl = document.querySelector('input[type="number"]');
 let inputValue = 0;
 
 inputEl.addEventListener('input', (event) => {
-  console.log(event.currentTarget.value);
+  // console.log(event.currentTarget.value);
   return (inputValue = event.currentTarget.value);
 });
 
@@ -18,7 +18,7 @@ function createBoxes(amount) {
   destroyBoxes();
 
   amount = inputValue;
-  console.log(amount);
+  // console.log(amount);
   const divElArray = [];
   let sizeOfElement = 20;
 
@@ -32,7 +32,7 @@ function createBoxes(amount) {
     divElArray.push(newDivEl);
   }
 
-  console.log(divElArray);
+  // console.log(divElArray);
   return document.querySelector('#boxes').append(...divElArray);
 }
 
